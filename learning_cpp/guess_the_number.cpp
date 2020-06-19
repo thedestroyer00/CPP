@@ -19,8 +19,10 @@ int main(){
 	long sec;
 	time(&sec);
 	srand((unsigned)sec);
-	int num = rand()%16, life, guess;
+	char cmd = 'r';
 	
+	while( cmd == 'r'){
+	int num = rand()%16, life, guess;
 	cout << "Guess a number (0-15) : ";
 	cin >> guess;	
 	for(life = 1; life >= 0; --life){
@@ -41,8 +43,16 @@ int main(){
 			if(guess == num) break;	
 			}
 		}
-	
+		
 	life >= 0 ? cout << "You guessed it. The number is "
 	 << num : cout << "You lose! The number is " << num;
+	
+	do {
+		cout << "\nEnter <r> --> to retry, <f> --> finish" <<endl;
+		cin >> cmd;
+	}while(cmd != 'r' && cmd != 'f');
+	}
+	
 	return 0;
 }
+
