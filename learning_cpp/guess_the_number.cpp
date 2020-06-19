@@ -18,7 +18,7 @@ int main(){
 	
 	long sec;
 	time(&sec);
-	srand(sec);
+	srand((unsigned)sec);
 	int num = rand()%16, life, guess;
 	
 	cout << "Guess a number (0-15) : ";
