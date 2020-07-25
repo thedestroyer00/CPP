@@ -12,6 +12,7 @@ int main(){
 	string str ;
 	
 	//takes input from standard input
+	cout << "Enter first paragraph : " << endl;
 	while (cin >> str)
 		vstr.push_back(str);
 	
