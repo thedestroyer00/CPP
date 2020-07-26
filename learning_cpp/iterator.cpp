@@ -37,9 +37,9 @@ int main(){
 		}
 			
 	//print the vector 
-	auto nb = vstr.cbegin();
-	for(; nb != e ; ++nb)
-		cout << *nb << " " ;	 
+	b = vstr.begin();
+	for(; b != e ; ++b)
+		cout << *b << " " ;	 
 	cout << endl;
 	
 	return 0;
