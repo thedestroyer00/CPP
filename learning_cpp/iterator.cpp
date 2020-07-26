@@ -1,5 +1,5 @@
-//HELP NEEDED 
-//tryig to change all the strings in the first paragraph to uppercase.
+
+//change all the strings in the first paragraph to uppercase.
 # include <iostream>
 # include <string>
 # include <vector>
@@ -10,12 +10,13 @@ int main(){
 	vector<string> vstr;
 	string str ;
 	
-	//take input from standard input
+	//takes input from standard input
 	cout << "Enter first paragraph : " << endl;
 	while (cin >> str)
 		vstr.push_back(str);
 	
 	//adding a empty string in the vector to indicate a prargraph change
+	
 	string str1;
 	vstr.push_back(str1);
 	
@@ -36,8 +37,9 @@ int main(){
 		}
 			
 	//print the vector 
-	for(; b != e ; ++b)
-		cout << *b << " " ;	 
+	auto nb = vstr.cbegin();
+	for(; nb != e ; ++nb)
+		cout << *nb << " " ;	 
 	cout << endl;
 	
 	return 0;
