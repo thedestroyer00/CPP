@@ -1,3 +1,5 @@
+//simple cpp program to show how friend function and friend class work:
+
 # include <iostream>
 # include <string>
 
