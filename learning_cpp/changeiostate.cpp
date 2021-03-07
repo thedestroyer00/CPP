@@ -6,7 +6,7 @@ std::istream& readin(std::istream& s){
     int val;
     std::cout << "enter number : ";
     s >> val;
-    s.setstate(std::ios::failbit); //set istream to failstate
+    s.clear(s.failbit); //set istream to failstate
     
     if(val != 0){
         s.clear(s.goodbit); //set istream to goodstate
@@ -43,3 +43,4 @@ int main(){
 
     return 0;
 }
+
