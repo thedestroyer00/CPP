@@ -5,6 +5,7 @@
 # include <iomanip>
 # include <string>
 # include <ctime>
+# include <cctype>
 using namespace std;
 
 bool getpassword(void);
